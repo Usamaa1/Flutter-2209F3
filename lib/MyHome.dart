@@ -32,7 +32,15 @@ class MyHome extends StatelessWidget {
           title: const Text("App bar in Home Screen"),
         ),
         body: SingleChildScrollView(
-          child: Column(children: [
+          child: Column(
+            children: [
+            const CircleAvatar(
+              // backgroundColor: Colors.blueGrey,
+              backgroundImage: NetworkImage(
+                  "https://images.unsplash.com/photo-1676491415102-89a8dec15ac5?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+              radius: 30,
+            ),
+            const Icon(Icons.movie),
             Container(
               width: 100,
               height: 100,
@@ -60,7 +68,7 @@ class MyHome extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
             ),
-              Container(
+            Container(
               width: 100,
               height: 100,
               color: Colors.deepPurpleAccent,
@@ -69,7 +77,7 @@ class MyHome extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
             ),
-              Container(
+            Container(
               width: 100,
               height: 100,
               color: Colors.deepPurpleAccent,
@@ -78,19 +86,19 @@ class MyHome extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
             ),
-              Container(
+            Container(
               width: 100,
               height: 100,
-              color: Color.fromARGB(255, 255, 142, 77),
+              color: const Color.fromARGB(255, 255, 142, 77),
               child: const Text(
                 "Div text",
                 style: TextStyle(color: Colors.white),
               ),
             ),
-             Container(
+            Container(
               width: 100,
               height: 100,
-              color: Color.fromARGB(255, 161, 59, 0),
+              color: const Color.fromARGB(255, 161, 59, 0),
               child: const Text(
                 "Div text",
                 style: TextStyle(color: Colors.white),
